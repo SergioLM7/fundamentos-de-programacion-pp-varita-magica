@@ -116,13 +116,15 @@ cambiarImagen2();
 const cambiarParrafos2 = () => {
     const parrafos = document.querySelectorAll('p');
     let colorAleatorio = getRandom(coloresAleatorios);
+    let colorAleatorio2 = getRandom(coloresAleatorios);
+
 
     for (let element of parrafos) {
         const originalColor = element.getAttribute('color');
         const originalBackground = element.getAttribute('backgroundColor');
         element.addEventListener('mouseenter', event => {
             element.style.color = colorAleatorio;
-        element.style.backgroundColor = colorAleatorio});
+        element.style.backgroundColor = colorAleatorio2});
 
         element.addEventListener('mouseleave', event => {
             element.style.color = originalColor;
@@ -137,13 +139,14 @@ cambiarParrafos2();
 const cambiarColorArticle2 = () => {
     const article = document.querySelectorAll('article');
     let colorAleatorio = getRandom(coloresAleatorios);
+    let colorAleatorio2 = getRandom(coloresAleatorios);
 
     article.forEach((element) => {
         const originalColor = element.getAttribute('color');
         element.addEventListener('mouseenter', event => element.style.color = colorAleatorio);
         element.addEventListener('mouseleave', event => element.style.color = originalColor);
         const originalBakcground = element.getAttribute('backgroundColor');
-        element.addEventListener('mouseenter', event => element.style.backgroundColor = colorAleatorio);
+        element.addEventListener('mouseenter', event => element.style.backgroundColor = colorAleatorio2);
         element.addEventListener('mouseleave', event => element.style.backgroundColor = originalBakcground);
     });
 
@@ -154,13 +157,14 @@ cambiarColorArticle2();
 const cambiarColorSection2 = () => {
     const section = document.querySelectorAll('section');
     let colorAleatorio = getRandom(coloresAleatorios);
+    let colorAleatorio2 = getRandom(coloresAleatorios);
 
     section.forEach((element) => {
         const originalColor = element.getAttribute('color');
         element.addEventListener('mouseenter', event => element.style.color = colorAleatorio);
         element.addEventListener('mouseleave', event => element.style.color = originalColor);
         const originalBackground = element.getAttribute('backgroundColor');
-        element.addEventListener('mouseenter', event => element.style.backgroundColor = colorAleatorio);
+        element.addEventListener('mouseenter', event => element.style.backgroundColor = colorAleatorio2);
         element.addEventListener('mouseleave', event => element.style.backgroundColor = originalBackground);
     });
 
